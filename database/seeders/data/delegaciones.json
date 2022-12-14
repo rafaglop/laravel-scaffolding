@@ -1,0 +1,300 @@
+{
+"delegaciones": [
+	{
+		"id" : 1,
+		"delegacion" : "ASTURIAS",
+		"user_id" : 4646,
+		"kits" : 0,
+		"zone_id" : 4,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 2,
+		"delegacion" : "CASTILLA",
+		"user_id" : 4647,
+		"kits" : 0,
+		"zone_id" : 4,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 3,
+		"delegacion" : "CENTRO",
+		"user_id" : 4648,
+		"kits" : 0,
+		"zone_id" : 4,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 4,
+		"delegacion" : "MADRID",
+		"user_id" : 4649,
+		"kits" : 0,
+		"zone_id" : 4,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 5,
+		"delegacion" : "CANARIAS",
+		"user_id" : 4650,
+		"kits" : 0,
+		"zone_id" : 5,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 6,
+		"delegacion" : "EXTREMADURA",
+		"user_id" : 4651,
+		"kits" : 0,
+		"zone_id" : 5,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 7,
+		"delegacion" : "CORDOBA",
+		"user_id" : 4652,
+		"kits" : 0,
+		"zone_id" : 5,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 8,
+		"delegacion" : "SEVILLA HUELVA",
+		"user_id" : 4653,
+		"kits" : 0,
+		"zone_id" : 5,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 10,
+		"delegacion" : "CADIZ",
+		"user_id" : 4652,
+		"kits" : 0,
+		"zone_id" : 5,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 11,
+		"delegacion" : "GRANADA-ALME-JAÉN",
+		"user_id" : 4654,
+		"kits" : 0,
+		"zone_id" : 5,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 12,
+		"delegacion" : "ARAGON",
+		"user_id" : 4642,
+		"kits" : 0,
+		"zone_id" : 3,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 13,
+		"delegacion" : "CATALUÑA",
+		"user_id" : 4644,
+		"kits" : 0,
+		"zone_id" : 3,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 14,
+		"delegacion" : "BARCELONA",
+		"user_id" : 4643,
+		"kits" : 0,
+		"zone_id" : 3,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 15,
+		"delegacion" : "CASTELLON",
+		"user_id" : 4656,
+		"kits" : 0,
+		"zone_id" : 6,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 16,
+		"delegacion" : "VALENCIA",
+		"user_id" : 4658,
+		"kits" : 0,
+		"zone_id" : 6,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 17,
+		"delegacion" : "ALBACETE,ALICANTE,MURCIA",
+		"user_id" : 4657,
+		"kits" : 0,
+		"zone_id" : 6,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 18,
+		"delegacion" : "BALEARES",
+		"user_id" : 4655,
+		"kits" : 0,
+		"zone_id" : 6,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 19,
+		"delegacion" : "NORTE",
+		"user_id" : 4645,
+		"kits" : 0,
+		"zone_id" : 3,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 20,
+		"delegacion" : "CORUÑA",
+		"user_id" : 4633,
+		"kits" : 0,
+		"zone_id" : 2,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 21,
+		"delegacion" : "BERGANTIÑOS",
+		"user_id" : 4634,
+		"kits" : 0,
+		"zone_id" : 2,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 22,
+		"delegacion" : "FERROL",
+		"user_id" : 4635,
+		"kits" : 0,
+		"zone_id" : 2,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 23,
+		"delegacion" : "LUGO",
+		"user_id" : 4636,
+		"kits" : 0,
+		"zone_id" : 2,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 24,
+		"delegacion" : "MARIÑA LUC.",
+		"user_id" : 4637,
+		"kits" : 0,
+		"zone_id" : 2,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 25,
+		"delegacion" : "ORENSE",
+		"user_id" : 4638,
+		"kits" : 0,
+		"zone_id" : 2,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 26,
+		"delegacion" : "PONTEVEDRA",
+		"user_id" : 4639,
+		"kits" : 0,
+		"zone_id" : 2,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 27,
+		"delegacion" : "SANTIAGO",
+		"user_id" : 4640,
+		"kits" : 0,
+		"zone_id" : 2,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 28,
+		"delegacion" : "VIGO",
+		"user_id" : 4641,
+		"kits" : 0,
+		"zone_id" : 2,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 29,
+		"delegacion" : "EXTERNOS",
+		"user_id" : 1985,
+		"kits" : 0,
+		"zone_id" : 6,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 30,
+		"delegacion" : "EXTERNOS",
+		"user_id" : 1985,
+		"kits" : 0,
+		"zone_id" : 5,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 31,
+		"delegacion" : "EXTERNOS",
+		"user_id" : 1985,
+		"kits" : 0,
+		"zone_id" : 4,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 32,
+		"delegacion" : "EXTERNOS",
+		"user_id" : 1985,
+		"kits" : 0,
+		"zone_id" : 3,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 33,
+		"delegacion" : "EXTERNOS",
+		"user_id" : 1985,
+		"kits" : 0,
+		"zone_id" : 2,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	},
+	{
+		"id" : 34,
+		"delegacion" : "MÁLAGA",
+		"user_id" : 4652,
+		"kits" : 0,
+		"zone_id" : 5,
+		"created_at" : "2022-02-07 17:23:22",
+		"updated_at" : "2022-02-07 17:23:22"
+	}
+]}

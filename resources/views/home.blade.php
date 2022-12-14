@@ -14,7 +14,11 @@
                         </div>
                     @endif
 
+                    @auth
                     {{ __('You are logged in!') }}
+                    @else
+                    {{ __('You are NOT logged in!') }}
+                    @endauth
                 </div>
             </div>
         </div>
