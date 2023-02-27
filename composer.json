@@ -7,7 +7,6 @@
     "require": {
         "php": "^8.1",
         "doctrine/dbal": "^3.6",
-        "gigya/php-sdk": "^3.0",
         "guzzlehttp/guzzle": "^7.2",
         "jantinnerezo/livewire-alert": "^2.2",
         "laravel/framework": "^10.0",
