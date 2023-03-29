@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Firma Correo APIS</title>
+  </head>
+  <body>
+    <table width="600" bgcolor="#ffffff" role="presentation" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td width="600" align="left">
+          <table width="600" role="presentation" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="24" style="font-size: 0px; line-height: 0px; background-color: #ffffff; text-align: right;">&nbsp;</td>
+              <td width="276" align="left">
+                <a href="https://apis.es/" >
+                  <img src="https://media.beonworldwide.com/firmas/apis/firma/imgs/logo.png" alt="logo" width="276" height="" border="0" align="center" class="fluid" style="width: 100%; max-width: 276px; height: auto; background:#ffffff; mso-height-rule: exactly; line-height: 20px; color: #ffffff;">
+                </a>
+              </td>
+              <td width="300" align="right" style="font-size: 0px; line-height: 0px; background-color: #ffffff;">
+                <table width="300" role="presentation" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td width="24" style="font-size: 0px; line-height: 0px; background-color: #ffffff; text-align: right;">&nbsp;</td>
+                    <td align="right" width="80">
+                      <img src="https://media.beonworldwide.com/firmas/apis/firma/imgs/apis.png" alt="logo" width="60" height="" border="0" align="center" class="fluid" style="width: 100%; max-width: 60px; height: auto; background:#ffffff; mso-height-rule: exactly; line-height: 20px; color: #ffffff; text-align: right;">
+                    </td>
+                    <td align="right" width="80">
+                      <img src="https://media.beonworldwide.com/firmas/apis/firma/imgs/fruco.png" alt="apis" width="60" height="" border="0" align="center" class="fluid" style="width: 100%; max-width: 60px; height: auto; background:#ffffff; mso-height-rule: exactly; line-height: 20px; color: #ffffff; text-align: right;">
+                    </td>
+                    <td align="right" width="80">
+                      <img src="https://media.beonworldwide.com/firmas/apis/firma/imgs/apis2.png" alt="apis" width="60" height="" border="0" align="center" class="fluid" style="width: 100%; max-width: 60px; height: auto; background:#ffffff; mso-height-rule: exactly; line-height: 20px; color: #ffffff; text-align: right;">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" height="30" style="font-size: 0px; line-height: 0px; background-color: #ffffff;"> &nbsp; </td>
+      </tr>
+      <tr>
+        <td colspan="2" width="600" valign="left">
+          <table width="600" role="presentation" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="24" style="font-size: 0px; line-height: 0px; background-color: #ffffff; text-align: right;">&nbsp;</td>
+              <td width="576" style="vertical-align: top;">
+                <p style="font-family: 'Adelle', sans-serif; font-weight: 400; font-size: 16px; line-height: 18px; color: #696666; margin: 0;">
+                  <b style="color: #000000;">{{$item->name}} {{$item->surname}}</b>
+                  <br>{{$item->position}}
+                  <br>
+                  <a style="font-size: 12px; color: #000000" href="mailto:{{$item->email}}">{{$item->email}}</a>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" height="10" style="font-size: 0px; line-height: 0px; background-color: #ffffff;"> &nbsp; </td>
+      </tr>
+      <tr>
+        <td colspan="2" width="600" align="left">
+          <table width="600" role="presentation" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="24" style="font-size: 0px; line-height: 0px; background-color: #ffffff; text-align: right;">&nbsp;</td>
+              <td width="576" style="vertical-align: top;">
+                <p style="font-family: 'Adelle', sans-serif; font-weight: 400; font-size: 12px; line-height: 18px; color: #696666; margin: 0;">
+                  <b style="color: #000000;">{{$item->office}}</b>
+                  <br>{{$item->address1}}
+                  <br>{{$item->address2}}
+                  <br>Tel. +34 {{$item->phone}}@if($item->mobile) Móv. +34 {{number_format($item->mobile, 0, '.', ' ')}}@endif @if($item->ext) Ext. {{$item->ext}} @endif
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td height="10" style="font-size: 0px; line-height: 0px; background-color: #ffffff;"> &nbsp; </td>
+            </tr>
+            <tr>
+              <td width="24" style="font-size: 0px; line-height: 0px; background-color: #ffffff; text-align: left;">&nbsp;</td>
+              <td width="576">
+                <table>
+                  <tr>
+                    <td width="30">
+                      <a href="https://www.facebook.com/ApisOficial/" >
+                        <img src="https://media.beonworldwide.com/firmas/apis/firma/imgs/facebook.png" alt="facebook" width="30" border="0" align="left" style="width: 100%; max-width: 30px; height: auto; background:#ffffff; mso-height-rule: exactly; line-height: 20px; color: #ffffff;">
+                      </a>
+                    </td>
+                    <td width="5" style="font-size: 0px; line-height: 0px; background-color: #ffffff; text-align: left;">&nbsp;</td>
+                    <td width="30">
+                      <a href="https://www.linkedin.com/company/10995685" >
+                        <img src="https://media.beonworldwide.com/firmas/apis/firma/imgs/linkedin.png" alt="linkedin" width="30" border="0" align="left" style="width: 100%; max-width: 30px; height: auto; background:#ffffff; mso-height-rule: exactly; line-height: 20px; color: #ffffff;">
+                      </a>
+                    </td>
+                    <td width="5" style="font-size: 0px; line-height: 0px; background-color: #ffffff; text-align: left;">&nbsp;</td>
+                    <td width="30">
+                      <a href="https://www.youtube.com/channel/UCqlD18y21HgLhA3t_xqI1tw" >
+                        <img src="https://media.beonworldwide.com/firmas/apis/firma/imgs/youtube.png" alt="youtube" width="30" border="0" align="left" style="width: 100%; max-width: 30px; height: auto; background:#ffffff; mso-height-rule: exactly; line-height: 20px; color: #ffffff;">
+                      </a>
+                    </td>
+                    <td width="5" style="font-size: 0px; line-height: 0px; background-color: #ffffff; text-align: left;">&nbsp;</td>
+                    <td width="30">
+                      <a href="https://www.instagram.com/apisoficial/" >
+                        <img src="https://media.beonworldwide.com/firmas/apis/firma/imgs/instagram.png" alt="instagram" width="30" border="0" align="left" style="width: 100%; max-width: 30px; height: auto; background:#ffffff; mso-height-rule: exactly; line-height: 20px; color: #ffffff;">
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td height="20" style="font-size: 0px; line-height: 0px; background-color: #ffffff;"> &nbsp; </td>
+      </tr>
+      <tr>
+
+        <td colspan="2">
+          <a href="#" >
+            <img src="https://media.beonworldwide.com/firmas/apis/firma/imgs/footer.jpg" alt="footer" width="600" height="" border="0" align="center" class="s" style="width: 100%; max-width: 600px; height: auto; background:#ffffff; mso-height-rule: exactly; line-height: 20px; color: #ffffff;">
+          </a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
