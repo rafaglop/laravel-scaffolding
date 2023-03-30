@@ -456,8 +456,8 @@ class HomeController extends Controller
         foreach($data as $item){
 
             $tmp = explode(",", $item->full_name);
-            $item->name = $tmp[0];
-            $item->surname = isset($tmp[1]) ? $tmp[1] : '';
+            $item->surname = $tmp[0];
+            $item->name = isset($tmp[1]) ? $tmp[1] : '';
 
             if(strpos($item->office, 'MONTIJO') == false){
                 $item->address1 = 'Pol. Ind. El Prado, C/Sevilla, s/n.';
