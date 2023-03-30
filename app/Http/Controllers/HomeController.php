@@ -459,7 +459,7 @@ class HomeController extends Controller
             $item->name = $tmp[0];
             $item->surname = isset($tmp[1]) ? $tmp[1] : '';
 
-            if(strpos($item->office, 'MONTIJO')!== false){
+            if(strpos($item->office, 'MONTIJO') == false){
                 $item->address1 = 'Pol. Ind. El Prado, C/Sevilla, s/n.';
                 $item->address2 = 'Parcelas  1 y 2 · 06800 Mérida (Badajoz) · España';
             }else{
