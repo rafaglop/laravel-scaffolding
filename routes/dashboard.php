@@ -1,14 +1,10 @@
 <?php
-
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Dashboard Routes
 |--------------------------------------------------------------------------
 */
-
-Route::middleware('auth:sanctum')->get('/dashboard', function (Request $request) {
-    return $request->user();
+// Dashboard routes
+Route::group(['prefix' => 'dashboard', 'middleware' => ['role:admin']], function () {
+    Route::get('/', [App\Http\Controllers\Back\DashboardController::class, 'index'])->name('dashboard.index');
 });

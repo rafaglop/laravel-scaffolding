@@ -1,9 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Auth\GigyaController;
-use App\Http\Controllers\CustomerController;
-
 
 /*
 |--------------------------------------------------------------------------
