@@ -7,49 +7,24 @@ $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 // Colors
-$blue: #00479A;
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66d9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$gray: #707070;
-$gray-light: #eaeaea;
-$gray-light-extra: #d9d9d9;
-$gray-dark: #222222;
-$gray-darker: #494949;
-$green: #38c172;
-$teal: #B2F26C;
-$cyan: #3ECCF1;
-$primary: #FF7733;
+$primary: #FF7900;
 $secondary: #ccc;
-$tertiary: #218f8b;
+$tertiary: #ccc;
+
 $success: #99E647;
-$dark: #12244C;
-$warning: #E63600;
-$muted: #99E647;
-
-
-// TODO: overwrite variables to style the app for the client's theme
+$light: #d9d9d9;
+$danger: #e3342f;
+$warning: #f6993f;
+$info: #3490dc;
+$dark: #27251F;
 
 $theme-colors: (
-    "primary": $blue,
+    "primary": $primary,
     "secondary": $secondary,
-    "tertiary": $tertiary,
     "success": $success,
-    "light-success": $teal,
-    "pink": $pink,
-    "light": $gray-light,
-    "danger": $red,
-    "warning": $orange,
-    "info": $cyan,
+    "light": $light,
+    "danger": $danger,
+    "warning": $warning,
+    "info": $info,
     "dark": $dark,
-    "gray": $gray,
-    "gray-darker": $gray-darker,
-
 );
-
-// Forms
-$form-check-input-checked-color: $blue;
-$form-check-input-checked-bg-color: $blue;

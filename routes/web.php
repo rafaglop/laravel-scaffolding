@@ -18,25 +18,8 @@ use App\Http\Controllers\CustomerController;
 
 Auth::routes();
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Public routes
+Route::get('/', [App\Http\Controllers\Front\HomeController::class, 'index'])->name('home');
 
-/*
-|************************************************
-|    Rutas clientes
-|************************************************
-*/
-
-
-Route::prefix('customer')->middleware(['auth'])->group(function () {
-
-    Route::get('dashboard', [CustomerController::class, 'index'])->name('customer.index');
-    Route::get('pincode', [CustomerController::class, 'usePincode'])->name('customer.pincode.use');
-});
-
-/*
-|************************************************
-|    Gigya
-|************************************************
-*/
-
-Route::post('gigya/user-verification', [GigyaController::class, 'userVerification'])->name('gigya.user-verification');
+// Dashboard routes
+include_once('dashboard.php');

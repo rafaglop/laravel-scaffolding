@@ -22,10 +22,6 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
-        'gigya_id',
-        'google_id',
-        'facebook_id',
-        'twitter_id',
         'password',
     ];
 
@@ -47,22 +43,4 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
-
-    public function isRetail()
-    {
-        if (!$this->gigya_id) {
-            return false;
-        }
-
-        $apiUserSearch = app('App\Http\Controllers\API\APIController')->getAccountInfo($this->gigya_id);
-
-        if (isset($apiUserSearch['response']) && isset($apiUserSearch['response']->data) && isset($apiUserSearch['response']->data->is_Retail)) {
-            $this->assign('barista');
-            return true;
-        } else {
-            $this->retract('barista');
-            return false;
-        }
-    }
 }

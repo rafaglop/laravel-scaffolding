@@ -1,0 +1,15 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"bd_beonworldwide20"},
+{"type":"table","name":"yfQiK_users","database":"bd_beonworldwide20","data":
+[
+{"ID":"25","user_login":"rrhh","user_pass":"$P$BGEEsFNINbtyyb.YrqplFZf7XC3AgG\/","user_nicename":"rrhh","user_email":"rrhh@beonww.com","user_url":"","user_registered":"2023-02-06 13:42:33","user_activation_key":"1675690954:$P$BnhZhnB87nVh8atCzPQi.r9vWmXhg4\/","user_status":"0","display_name":"rrhh"},
+{"ID":"5","user_login":"Carlos","user_pass":"$P$BO3mfv6UTrqg.EBsbQNdHWQLxkIbMA1","user_nicename":"carlos","user_email":"cgr@beonww.com","user_url":"","user_registered":"2020-02-26 15:45:18","user_activation_key":"","user_status":"0","display_name":"Carlos"},
+{"ID":"24","user_login":"maria","user_pass":"$P$BM2k7TT7lwGl3\/IYxbJzh5LSlwkKJI1","user_nicename":"maria","user_email":"mt@beonww.com","user_url":"","user_registered":"2022-11-02 16:27:40","user_activation_key":"1667406462:$P$B0IU97CMUoOH4g9zzmLXhD39naxOOl0","user_status":"0","display_name":"maria"},
+{"ID":"22","user_login":"fran-beon","user_pass":"$P$B3fvnEmiJNsz\/I.Ic9pe46qdALFgwE1","user_nicename":"fran-beon","user_email":"fgn@beonww.com","user_url":"","user_registered":"0000-00-00 00:00:00","user_activation_key":"","user_status":"0","display_name":"fran beon"},
+{"ID":"8","user_login":"Gonza","user_pass":"$P$BR4BTK.YSflAYSM8rDpCjk0dGXfEpE.","user_nicename":"gonza","user_email":"gg@beonww.com","user_url":"","user_registered":"2020-03-09 15:32:42","user_activation_key":"","user_status":"0","display_name":"Gonza"},
+{"ID":"20","user_login":"Genu","user_pass":"$P$BHuoSRbXPFJQ1VLNlIj12n7E6r93Tq0","user_nicename":"genu","user_email":"med@beonww.com","user_url":"","user_registered":"2020-03-18 11:00:28","user_activation_key":"","user_status":"0","display_name":"Genu"},
+{"ID":"21","user_login":"Yesica","user_pass":"$P$BJQy7dNCRW3lg8YuH1nxYrtxZOIogZ0","user_nicename":"yesica","user_email":"ym@beonww.com","user_url":"","user_registered":"2020-03-18 11:08:27","user_activation_key":"","user_status":"0","display_name":"Yesica Mata"}
+]
+}
+]

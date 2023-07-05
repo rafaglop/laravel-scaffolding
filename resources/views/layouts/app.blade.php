@@ -22,176 +22,72 @@
 </head>
 <body>
     
-    <div id="loadingSpinner">Loading</div>
-    
     <div id="app">
         
-        @include('layouts.nav')
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            
+            <div class="container">
+                
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    {{ config('app.name', 'Laravel') }}
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav me-auto">
+                        
+                    </ul>
+                    
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Authentication Links -->
+                        @guest
+                        
+                        @if (Route::has('login'))
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        </li>
+                        @endif
+                        
+                        @if (Route::has('register'))
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                        </li>
+                        @endif
+                        @else
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->name }}
+                            </a>
+                            
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+                            
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
+                        @endguest
+                    </ul>
+                </div>
+            
+            </div>
         
+        </nav>    
+
         <main class="py-4">
             @yield('content')
         </main>
-        
-    </div>
     
-    <script src="https://cdns.gigya.com/js/gigya.js?apikey={{ env('GIGYA_KEY') }}&lang=es"></script>
-    <script>
-        
-        function hideSpinner() {
-            
-            let spinner = document.getElementById('loadingSpinner');
-            spinner.classList.add('d-none');
-        }
-        
-        function showSpinner() {
-            let spinner = document.getElementById('loadingSpinner');
-            spinner.classList.remove('d-none');
-            
-        }
-        
-        function RegistrationLogin(_callback){
-            gigya.accounts.showScreenSet({screenSet:'eg-RegistrationLogin', startScreen:'eg-login-screen'});
-            hideSpinner();    
-        }
-        
-        function getLoginScreen(_callback){
-            gigya.accounts.showScreenSet({screenSet:'eg-RegistrationLogin', startScreen:'eg-login-screen'});
-            hideSpinner();    
-        }
-        
-        function getRegistrationScreen(_callback){
-            gigya.accounts.showScreenSet({screenSet:'eg-RegistrationLogin', startScreen:'eg-registration-screen'});
-            hideSpinner();    
-        }
-        
-        function init()
-        {
-            
-            let loginLink = document.getElementById("gigya-login");
-            let registrationLink = document.getElementById("gigya-registration");
-            let logoutLink = document.getElementById("gigya-logout");
-            
-            // Botón de login
-            if(loginLink){
-                loginLink.addEventListener("click", function(){
-                    showSpinner();
-                    getLoginScreen();
-                });
-            }
-            
-            // Botón de registro
-            if(registrationLink){
-                registrationLink.addEventListener("click", function(){
-                    showSpinner();
-                    getRegistrationScreen();
-                });
-            }
-
-            // Botón de logout
-            if(logoutLink){
-                logoutLink.addEventListener("click", function(){
-                    showSpinner();
-                    gigya.socialize.logout({callback:showResponse});
-                });
-            }
-            
-            gigya.socialize.getUserInfo({
-                callback: getUI
-            });
-            
-            gigya.socialize.addEventHandlers({
-                onConnectionAdded: getUI,
-                onConnectionRemoved: getUI
-            });
-            
-        }
-        
-        // Obtener el perfil del usuario
-        function getUI(res) {
-            
-            //Si existe usuario logueado
-            if (res.user != null && res.user.isConnected) {
-                verifyUser(res);
-            }
-            //botones(res);
-        }
-        
-        function botones(object) {
-            if (object.user != null && object.user.isConnected) {
-                $('#gigya-login, #gigya-register').css({
-                    "display": "none"
-                });
-                $('#gigya-profile, #gigya-logout').css({
-                    "display": "inline"
-                });
-            } else {
-                $('#gigya-profile, #gigya-logout').css({
-                    "display": "none"
-                });
-                $('#gigya-login, #gigya-register').css({
-                    "display": "inline"
-                });
-            }
-        }
-        
-        
-        // Response control
-        function showResponse(eventObj) {
-            
-            showSpinner();
-            //Pintar UI
-            if (eventObj.eventName == "login") {
-                getUI(eventObj);
-            } else if (eventObj.eventName == "logout") {
-                verifyUser(eventObj);
-            }
-        }
-        
-        function verifyUser(object) {
-            
-            axios({
-                method: 'post',
-                url: "{{ route('gigya.user-verification') }}",
-                data: { 
-                    data: object.user,
-                    lastName: "{{ csrf_token() }}"
-                }
-            }).then((response) => {
-
-                if(response.data && response.data.action === 'login' || response.data && response.data.action === 'logout'){
-                                           
-                    location.reload();
- 
-                    if(response.is_retail === true){
-                        var url = "{{ route('home') }}";
-                        window.location.href = url;
-                    }else{
-                        location.reload();
-                    }
-                    
-                }
-            }, (error) => {
-                console.table("ERR",error);
-            });
-            
-        }
-        
-        document.addEventListener("DOMContentLoaded", function () {
-            
-            hideSpinner();
-            init();
-            
-            //Listeners de evento de socialize
-            gigya.socialize.addEventHandlers({
-                onLogin: showResponse,
-                onLogout: showResponse,
-                onConnectionAdded: showResponse,
-                onConnectionRemoved: showResponse
-            });
-        }, false);
-        
-        
-        
-    </script>
+    </div>
 </body>
 </html>
